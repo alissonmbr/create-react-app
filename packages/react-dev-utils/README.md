@@ -1,3 +1,7 @@
+This is a fork from https://github.com/blackarctic/create-react-app < https://github.com/facebook/create-react-app
+
+This fork aims to use the react-scripts with webpack 5.0.0-beta.29. This package is not stable and should be use for tests only
+
 # react-dev-utils
 
 This package includes some utilities used by [Create React App](https://github.com/facebook/create-react-app).<br>
@@ -231,11 +235,11 @@ var formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 
 var compiler = webpack(config);
 
-compiler.hooks.invalid.tap('invalid', function() {
+compiler.hooks.invalid.tap('invalid', function () {
   console.log('Compiling...');
 });
 
-compiler.hooks.done.tap('done', function(stats) {
+compiler.hooks.done.tap('done', function (stats) {
   var rawMessages = stats.toJson({}, true);
   var messages = formatWebpackMessages(rawMessages);
   if (!messages.errors.length && !messages.warnings.length) {

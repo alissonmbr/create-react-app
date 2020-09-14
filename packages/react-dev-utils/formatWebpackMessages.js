@@ -21,7 +21,7 @@ function formatMessage(messageObjOrString) {
   if (typeof messageObjOrString === 'string') {
     message = messageObjOrString;
   } else {
-    message = messageObjOrString.message;
+    message = `${messageObjOrString.moduleName}\n${messageObjOrString.message}`;
   }
   /* wbpk-5-cra-utils end */
   let lines = message.split('\n');
