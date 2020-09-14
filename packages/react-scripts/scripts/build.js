@@ -41,7 +41,7 @@ const paths = require('../config/paths');
 const checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
 /* webpack-5-react-scripts start */
 // const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
-const formatWebpackMessages = require('react-dev-utils-wp5/formatWebpackMessages');
+const formatWebpackMessages = require('react-scripts-utils-wp5/formatWebpackMessages');
 /* webpack-5-react-scripts end */
 const printHostingInstructions = require('react-dev-utils/printHostingInstructions');
 const FileSizeReporter = require('react-dev-utils/FileSizeReporter');

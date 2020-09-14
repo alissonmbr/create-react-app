@@ -44,7 +44,7 @@ const {
   prepareUrls,
   /* webpack-5-react-scripts start */
   // } = require('react-dev-utils/WebpackDevServerUtils');
-} = require('react-dev-utils-wp5/WebpackDevServerUtils');
+} = require('react-scripts-utils-wp5/WebpackDevServerUtils');
 /* webpack-5-react-scripts end */
 const openBrowser = require('react-dev-utils/openBrowser');
 const paths = require('../config/paths');
